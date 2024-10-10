@@ -78,6 +78,7 @@ export  const unsubscribe =async (req,res,next)=>{
  
 }
 export  const like =async (req,res,next)=>{
+  console.log("@@@",req.user);
     const id = req.user.id;
     const videoId = req.params.videoId;
     try {
